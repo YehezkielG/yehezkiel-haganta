@@ -61,7 +61,7 @@ function Section() {
           </div>
         </div>
         <h1 className="font-semibold md:text-xl lg:text-2xl my-2">
-          Hey everyone 👋, i'm
+          Hey everyone 👋, i&apos;m
           <span className="block text-2xl font-bold text-dark lg:text-4xl">
             Yehezkiel Haganta Tarigan
           </span>

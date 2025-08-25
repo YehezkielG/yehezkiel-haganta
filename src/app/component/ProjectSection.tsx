@@ -86,10 +86,12 @@ const Projects: React.FC = () => {
             <div className="relative w-full h-48 overflow-hidden">
                 {
                 project.image ? (
-                  <img
+                  <Image
                   src={project.image}
                   alt={project.title}
                   className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-300"
+                  width={400}
+                  height={200}
                   />
                 ) : (
                   <div className="w-full h-full flex items-center justify-center bg-gray-800 text-gray-500">
@@ -129,7 +131,7 @@ const Projects: React.FC = () => {
                     rel="noopener noreferrer"
                     className="p-2 text-sm bg-gray-700/50 rounded-lg hover:bg-gray-700/70 flex items-center gap-2"
                   >
-                    <img src="/img/skills/github.png" className="w-5" alt="" />
+                    <Image src="/img/skills/github.png" className="w-5" width={20} height={20} alt="" />
                     GitHub
                   </a>
                   )}
