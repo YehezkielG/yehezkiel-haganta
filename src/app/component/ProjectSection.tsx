@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 interface Project {
   title: string;
@@ -16,7 +17,7 @@ const Projects: React.FC = () => {
       title: "Memory Game",
       description:
         "This game will Train Short Term Memory, Improve Concentration and Focus, and Train Visual Memory, interactive gameplay that challenges players to sharpen memory and concentration skills in a fun way",
-      image: "img/project/memorygame.png",
+      image: "/img/project/memorygame.png",
       stack: ["TypeScript", "Next JS", "Tailwind CSS"],
       github: "https://github.com/YehezkielG/memory-game",
       preview: "https://memory-game-kiel.vercel.app",
@@ -24,14 +25,14 @@ const Projects: React.FC = () => {
       title: "Machine Learning From Scratch",
       description:
         "A collection of core Machine Learning algorithms implemented from scratch using Python and NumPy. This project demonstrates a deep understanding of mathematical foundations and algorithmic design without relying on high-level ML libraries.",
-      image: "img/project/mlfromscratch.png",
+      image: "/img/project/mlfromscratch.png",
       stack: ["Python", "NumPy","Scikit-learn", "Math"],
       github: "https://github.com/YehezkielG/Machine-Learning-From-Scratch",
     },{
       title: "Next.js Dashboard",
       description:
         "A modern dashboard starter template built with Next.js, leveraging the App Router architecture. It features a clean, scalable layout with TypeScript support—perfect as a foundation for building data-driven admin interfaces quickly and reliably.",
-      image: "img/project/nextdash.png",
+      image: "/img/project/nextdash.png",
       stack: ["TypeScript", "Next JS", "Tailwind CSS"],
       github: "https://github.com/YehezkielG/nextjs-dashboard",
       preview: "https://nextjs-dashboard-kiel.vercel.app",
@@ -39,7 +40,7 @@ const Projects: React.FC = () => {
         title: "Focus-Forge — Pomodoro Timer & Task Manager",
         description:
           "A web-based Pomodoro timer paired with a task list manager, built using HTML, Tailwind CSS, and vanilla JavaScript. Tracks session history, customizable focus/ break intervals, browser tab title updates, and notifications to keep users on track.",
-        image: "img/project/pomodoro.png",
+        image: "/img/project/pomodoro.png",
         stack: ["HTML5", "Tailwind CSS", "JavaScript"],
         github: "https://github.com/YehezkielG/Pomodoro_Timer",
         preview: "https://focusforge.vercel.app",
@@ -48,7 +49,7 @@ const Projects: React.FC = () => {
         title: "Tic-Tac-Toe: Two-Player.",
         description: 
           "A modern take on the classic Tic-Tac-Toe, built with vanilla JS, HTML, and CSS. Includes a real-time match timer, two-player mode, and live scoreboard to keep players engaged.",
-        image: "img/project/ttt.png",  // screenshot of your game
+        image: "/img/project/ttt.png",  // screenshot of your game
         github: "https://github.com/YehezkielG/Tic-Tac-Toe",
         preview: "https://yehezkielg.github.io/Tic-Tac-Toe/",
         stack: ["HTML5", "CSS", "JavaScript"]
@@ -128,7 +129,7 @@ const Projects: React.FC = () => {
                     rel="noopener noreferrer"
                     className="p-2 text-sm bg-gray-700/50 rounded-lg hover:bg-gray-700/70 flex items-center gap-2"
                   >
-                    <img src="img/skills/github.png" className="w-5" alt="" />
+                    <img src="/img/skills/github.png" className="w-5" alt="" />
                     GitHub
                   </a>
                   )}
@@ -138,7 +139,7 @@ const Projects: React.FC = () => {
                   rel="noopener noreferrer"
                   className="p-2 text-sm bg-gray-700/50 rounded-lg hover:bg-gray-700/70 flex items-center gap-2"
                 >
-                  <img src="img/project/globe.png" className="w-5" alt="" />
+                  <Image src="/img/project/globe.png" className="w-5" width={20} height={20} alt="" />
                   Live Preview
                 </a>)}
               </div>

@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function About() {
   return (
@@ -12,11 +13,12 @@ export default function About() {
       id="AboutMe"
     >
       <div className="flex justify-center items-center w-full md:w-1/4 mb-5 md:mb-0">
-        <div className="rounded-full h-[120px] w-[120px] md:h-[150px] md:w-[150px] flex items-center justify-center overflow-hidden">
-          <img
-            src="img/kiel_ganteng_2.png"
+        <div className="rounded-full h-[120px] w-[120px] md:h-[150px] md:w-[150px] relative flex items-center justify-center overflow-hidden">
+          <Image
+            src="/img/kiel_ganteng_2.png"
             alt="Profile"
-            className="object-cover h-full w-full"
+            className="object-cover"
+            fill
           />
         </div>
       </div>
@@ -29,26 +31,26 @@ export default function About() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm md:text-lg">
           <span className="my-2">Full Name</span>
           <span className="my-2 text-gray-400 flex items-center">
-            <img src="img/about me/prsn.png" className="w-5 mr-1 h-5" />
+            <Image src="/img/about me/prsn.png" className="w-5 mr-1 h-5" alt="Person Icon" width={20} height={20} />
             Yehezkiel Haganta Tarigan
           </span>
           <span className="my-2">Interest</span>
           <span className="my-2 text-gray-400">
             <div className="flex items-center">
-              <img src="img/about me/coding.png" className="w-5 mr-1 h-5" /> Full-Stack Development
+              <Image src="/img/about me/coding.png" className="w-5 mr-1 h-5" alt="Coding Icon" width={20} height={20} /> Full-Stack Development
             </div>
             <div className="flex items-center">
-              <img src="img/about me/neural-network.png" className="w-5 mr-1 h-5" /> AI Engineering
+              <Image src="/img/about me/neural-network.png" className="w-5 mr-1 h-5" alt="AI Icon" width={20} height={20} /> AI Engineering
             </div>
           </span>
           <span className="my-2">Non-IT Interest</span>
           <span className="my-2 text-gray-400">
             <div className="flex items-center">
-              <img src="img/about me/pyc.png" className="w-5 mr-1 h-5" />
+              <Image src="/img/about me/pyc.png" className="w-5 mr-1 h-5" alt="Psychology Icon" width={20} height={20} />
               Psychology
             </div>
             <div className="flex items-center">
-              <img src="img/about me/guitar.png" className="w-5 mr-1 h-5" />
+              <Image src="/img/about me/guitar.png" className="w-5 mr-1 h-5" alt="Guitar Icon" width={20} height={20} />
               Guitar
             </div>
           </span>
@@ -61,16 +63,16 @@ export default function About() {
           <span className="my-2">Favorite Programming Language</span>
           <span className="my-2 text-gray-400">
             <div className="flex items-center">
-              <img src="img/skills/TS.png" className="w-5 mr-1 h-5" /> Typescript
+              <Image src="/img/skills/TS.png" className="w-5 mr-1 h-5" alt="TypeScript Icon" width={20} height={20} /> Typescript
             </div>
             <div className="flex items-center">
-              <img src="img/skills/python.png" className="w-5 mr-1 h-5" /> Python
+              <Image src="/img/skills/python.png" className="w-5 mr-1 h-5" alt="Python Icon" width={20} height={20} /> Python
             </div>
           </span>
           <span>Education</span>
           <span>
             <div className="flex items-center p-2 rounded-lg w-fit text-sm">
-              <img src="img/about me/smk.png" className="w-8 mr-3 h-w-8" />
+              <Image src="/img/about me/smk.png" className="w-8 mr-3 h-w-8" alt="SMK Logo" width={32} height={32} />
               <div>
                 <a href="https://smktritechinformatika.sch.id">SMK Tritech Informatika</a>
                 <div className="text-gray-400">Software Engineer</div>
@@ -78,7 +80,7 @@ export default function About() {
               </div>
             </div>
             <div className="flex items-center p-2 rounded-lg w-fit text-sm">
-              <img src="img/about me/unimed.png" className="w-8 mr-3 h-w-8" />
+              <Image src="/img/about me/unimed.png" className="w-8 mr-3 h-w-8" alt="Unimed Logo" width={32} height={32} />
               <div>
                 <a href="https://portal.unimed.ac.id">Medan State University</a>
                 <div className="text-gray-400">Computer Science</div>

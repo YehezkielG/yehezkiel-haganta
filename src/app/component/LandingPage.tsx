@@ -45,16 +45,18 @@ export function TypingText({
   );
 }
 
-
 function Section() {
   return (
     <section className="h-[100svh] flex items-center py-20 text-center justify-center flex-wrap lg:py-0" id="Home">
       <div className="">
         <div className="flex justify-center">
           <div className="rounded-full h-[280px] w-[280px] overflow-hidden bg-white/10">
-            <img
-              src="img/kiel_ganteng.png"
+            <Image
+              src="/img/kiel_ganteng.png"
+              alt="Profile Picture"
               className="mx-auto max-w-full z-20 h-[250px] mt-8"
+              width={280}
+              height={280}
             />
           </div>
         </div>

@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 function FullstackSkill() {
   const FullstackSkill = [
@@ -19,10 +20,12 @@ function FullstackSkill() {
           className="group relative flex justify-center items-center"
           key={item.name}
         >
-          <img
-            src={`img/skills/${item.image}`}
+          <Image
+            src={`/img/skills/${item.image}`}
             className="h-20 relative z-10"
             alt={item.name}
+            width={80}
+            height={80}
           />
           {/* Tooltip */}
           <span className="z-20 absolute -bottom-7 scale-0 rounded bg-slate-800 px-2 py-1 text-xs text-white transition-all group-hover:scale-100 whitespace-nowrap">
@@ -49,10 +52,12 @@ function AIMLskills() {
           className="group relative flex justify-center items-center"
           key={item.name}
         >
-          <img
-            src={`img/skills/${item.image}`}
+          <Image
+            src={`/img/skills/${item.image}`}
             className="h-20 relative z-10"
             alt={item.name}
+            width={80}
+            height={80}
           />
           {/* Tooltip */}
           <span className="z-20 absolute -bottom-7 scale-0 rounded bg-slate-800 px-2 py-1 text-xs text-white transition-all group-hover:scale-100 whitespace-nowrap">
@@ -80,9 +85,11 @@ function OtherSkills() {
           className="group relative flex justify-center items-center"
           key={item.name}
         >
-          <img
-            src={`img/skills/${item.image}`}
+          <Image
+            src={`/img/skills/${item.image}`}
             className="h-20 relative z-10"
+            width={80}
+            height={80}
             alt={item.name}
           />
 
