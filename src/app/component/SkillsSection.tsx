@@ -22,10 +22,10 @@ function FullstackSkill() {
         >
           <Image
             src={`/img/skills/${item.image}`}
-            className="h-20 relative z-10"
             alt={item.name}
             width={80}
             height={80}
+            className="object-contain z-10"
           />
           {/* Tooltip */}
           <span className="z-20 absolute -bottom-7 scale-0 rounded bg-slate-800 px-2 py-1 text-xs text-white transition-all group-hover:scale-100 whitespace-nowrap">
@@ -54,10 +54,10 @@ function AIMLskills() {
         >
           <Image
             src={`/img/skills/${item.image}`}
-            className="h-20 relative z-10"
             alt={item.name}
             width={80}
             height={80}
+            className="object-contain z-10"
           />
           {/* Tooltip */}
           <span className="z-20 absolute -bottom-7 scale-0 rounded bg-slate-800 px-2 py-1 text-xs text-white transition-all group-hover:scale-100 whitespace-nowrap">
@@ -87,12 +87,11 @@ function OtherSkills() {
         >
           <Image
             src={`/img/skills/${item.image}`}
-            className="h-20 relative z-10"
+            alt={item.name}
             width={80}
             height={80}
-            alt={item.name}
+            className="object-contain z-10"
           />
-
           {/* Tooltip */}
           <span className="z-20 absolute -bottom-7 scale-0 rounded bg-slate-800 px-2 py-1 text-xs text-white transition-all group-hover:scale-100 whitespace-nowrap">
             {item.name}
