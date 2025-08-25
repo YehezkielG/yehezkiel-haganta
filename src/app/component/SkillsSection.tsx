@@ -39,7 +39,7 @@ function FullstackSkill() {
 function AIMLskills() {
   const AIMLskills = [
     { name: "python", image: "python.png" },
-    { name: "scikit learn", image: "sklearn.png" },
+    { name: "scikit learn", image: "skLearn.png" },
     { name: "tensorflow", image: "tensorflow.png" },
     { name: "pytorch", image: "pytorch.png" },
     { name: "excel", image: "excel.png" },
