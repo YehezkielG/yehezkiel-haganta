@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 type Props = {
   texts: string[];  // array teks yang mau dianimasikan
